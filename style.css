@@ -25,6 +25,11 @@ body {
 	border-radius: 15px;
 	background-color: #ffffff;
 	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+	transition: height 0.3s ease;
+}
+
+.wrapper.active {
+	height: 510px;
 }
 
 .wrapper header {
@@ -87,4 +92,10 @@ body {
 	border-radius: 10px;
 	opacity: 0;
 	pointer-events: none;
+	transition: opacity 0.5s 0.05s ease;
+}
+
+.wrapper.active .qr-container {
+	opacity: 1;
+	pointer-events: auto;
 }
